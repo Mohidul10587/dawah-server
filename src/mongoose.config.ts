@@ -21,7 +21,7 @@ export class MongooseConfigService implements MongooseOptionsFactory {
     });
 
     return {
-      uri: process.env.MONGO_URI,
+      uri: 'mongodb+srv://mohid10587:Usz0E31KP3fyyBQ3@cluster5.4relj71.mongodb.net/dawah?retryWrites=true&w=majority',
     };
   }
 }
