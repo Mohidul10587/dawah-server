@@ -1,10 +1,10 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
-export type CorrectionDocument = Correction & Document;
+export type PostDocument = Post & Document;
 
 @Schema({ timestamps: true })
-export class Correction {
+export class Post {
   @Prop({ required: true })
   title: string;
 
@@ -21,4 +21,4 @@ export class Correction {
   video: string;
 }
 
-export const CorrectionSchema = SchemaFactory.createForClass(Correction);
+export const PostSchema = SchemaFactory.createForClass(Post);
