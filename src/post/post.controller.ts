@@ -39,7 +39,7 @@ export class PostController {
   async update(@Param('id') id: string, @Body() updatePostDto: UpdatePostDto) {
     return this.postService.update(id, updatePostDto);
   }
-  @Delete('deleteByAdmin:id')
+  @Delete('deleteByAdmin/:id')
   remove(@Param('id') id: string) {
     return this.postService.delete(id);
   }
